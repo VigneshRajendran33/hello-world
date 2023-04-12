@@ -4,7 +4,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
 import LoginComponent from './components/LoginComponent';
 import DashboardComponent from './components/DashboardComponent';
-
+import SignInComponent from './components/SignInComponent'
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <div>
         <section>                              
             <Routes>
-               {/* <Route path="/signup" element={<Signup/>}/> */}
-               <Route path="/login" element={<LoginComponent />}/>
+               <Route path="/login" element={<SignInComponent />}/>
+               <Route path="/" element={<LoginComponent />}/>
                <Route path="/Dashboard" element={<DashboardComponent />}/>
             </Routes>                    
         </section>
